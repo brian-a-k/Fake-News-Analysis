@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c3cbd9a-8d88-4322-9bb1-65bae1605303" name="Default Changelist" comment="" />
+    <list default="true" id="9c3cbd9a-8d88-4322-9bb1-65bae1605303" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/data_NLP_processing-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/data_NLP_processing-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/spacyNerTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/spacyNerTesting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_NLP_processing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/data_NLP_processing.ipynb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570662908896</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ner testing">
+      <created>1572034965455</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572034965455</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -202,6 +214,7 @@
     </ignored-roots>
     <MESSAGE value="Spacy Example" />
     <MESSAGE value="new" />
-    <option name="LAST_COMMIT_MESSAGE" value="new" />
+    <MESSAGE value="ner testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="ner testing" />
   </component>
 </project>
