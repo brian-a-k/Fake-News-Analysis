@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9c3cbd9a-8d88-4322-9bb1-65bae1605303" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Data_EDA-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Data_EDA-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/data_NLP_processing-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/data_NLP_processing-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/spacyNerTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/spacyNerTesting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/DataProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/DataProcessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/SpacyTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/SpacyTesting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_NLP_processing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/data_NLP_processing.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,7 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.spacyNerTesting">
+  <component name="RunManager" selected="Python.SpacyTesting">
     <configuration name="DataProcessing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FakeNewsChallenge" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,10 +138,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.SpacyTesting" />
         <item itemvalue="Python.spacyNerTesting" />
         <item itemvalue="Python.DataProcessing" />
         <item itemvalue="Python.SpacySimilarityTesting" />
-        <item itemvalue="Python.SpacyTesting" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572034965455</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ner testing">
+      <created>1572039539057</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1572039539057</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
