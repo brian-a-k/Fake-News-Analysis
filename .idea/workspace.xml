@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9c3cbd9a-8d88-4322-9bb1-65bae1605303" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Data_EDA-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Data_EDA-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/data_NLP_processing-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/data_NLP_processing-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/DataProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/DataProcessing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/SpacyTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/SpacyTesting.py" afterDir="false" />
@@ -191,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572039539057</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ner spacy testing">
+      <created>1572128349558</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572128349558</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -224,6 +230,7 @@
     <MESSAGE value="Spacy Example" />
     <MESSAGE value="new" />
     <MESSAGE value="ner testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="ner testing" />
+    <MESSAGE value="ner spacy testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="ner spacy testing" />
   </component>
 </project>

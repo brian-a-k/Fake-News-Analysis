@@ -1,4 +1,5 @@
 import spacy
+from typing import *
 from collections import defaultdict
 
 fake_headlines = [
@@ -22,20 +23,21 @@ fake_headlines = [
     'Van Full Of Illegals Shows Up To Vote Clinton At SIX Polling Places, Still Think Voter Fraud Is A Myth?  The Resistance The Last Line of Defense',
     'Lady Gaga’s Twitter Attack On Melania Trump Lands Her In Handcuffs When The Two Meet Face To Face  The Resistance The Last Line of Defense']
 
-# Load English tokenizer, tagger, parser, NER and word vectors
-nlp = spacy.load('en_core_web_md')
-fake_ner_dict = defaultdict(list)
-ner_pipeline = nlp.pipe(fake_headlines, disable=["tagger", "parser"])
+
+def create_ner_dict(text: List[str]) -> DefaultDict:
+    nlp = spacy.load('en_core_web_md')
+    ner_pipeline = nlp.pipe(text, disable=["tagger", "parser"])
+    entity_dict = defaultdict(list)
+    for doc in ner_pipeline:
+        for entity in doc.ents:
+            entity_dict[entity.label_].append(entity.text)
+    return entity_dict
 
 
-fake_list = []
-for doc in nlp.pipe(fake_headlines, disable=["tagger", "parser"]):
-    for ent in doc.ents:
-        fake_list.append((ent.label_, ent.text))
+fake_entities = create_ner_dict(fake_headlines)
 
-for k, v in fake_list:
-    fake_ner_dict[k].append(v)
+for key in fake_entities:
+    print(key, ':', fake_entities[key])
 
-print(fake_ner_dict)
 
 
