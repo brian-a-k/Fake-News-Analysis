@@ -87,10 +87,9 @@ def run_prop_noun_parse(corpus: List[str]) -> List[str]:
     # re-build the text corpus with just Proper Nouns
     noun_corpus = []
     for doc in dep_pipeline:
-        found_pronouns = []
-        for token in doc:
-            if token.is_stop is False and token.pos_ == 'PROPN':  # Filter out STOP WORDS and all other POS tags
-                found_pronouns.append(token.text)
+        # Filter out STOP WORDS and all other POS tags
+        found_pronouns = [token.text for token in doc if token.is_stop is False and token.pos_ == 'PROPN']
         if len(found_pronouns) > 0:
             noun_corpus.append(' '.join(found_pronouns))
     return noun_corpus
+

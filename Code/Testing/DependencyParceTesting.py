@@ -32,31 +32,13 @@ def run_prop_noun_parse(corpus: List[str]) -> List[str]:
     # re-build the text corpus with just Proper Nouns
     noun_corpus = []
     for doc in dep_pipeline:
-        found_pronouns = []
-        for token in doc:
-            if token.is_stop is False and token.pos_ == 'PROPN':  # Filter out STOP WORDS and all other POS tags
-                found_pronouns.append(token.text)
+        # Filter out STOP WORDS and all other POS tags
+        found_pronouns = [token.text for token in doc if token.is_stop is False and token.pos_ == 'PROPN']
         if len(found_pronouns) > 0:
             noun_corpus.append(' '.join(found_pronouns))
     return noun_corpus
 
 
 noun_test = run_prop_noun_parse(fake_headlines)
-
 print(noun_test)
 print(len(noun_test))
-
-
-
-# nlp = spacy.load('en_core_web_md')
-#
-# dep_pipeline = nlp.pipe(fake_headlines, disable=['ner'])
-#
-# noun_parse = defaultdict(list)
-# for idx, doc in enumerate(dep_pipeline):
-#     for token in doc:
-#         if token.is_stop is False and token.pos_ == 'PROPN':
-#             noun_parse[idx].append((token.text, token.pos_))
-#
-# for key in noun_parse.keys():
-#     print(key, ":", noun_parse[key])

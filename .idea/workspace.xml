@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c3cbd9a-8d88-4322-9bb1-65bae1605303" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Code/Testing/DependencyParceTesting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Code/Testing/NerVectorTesting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/data_NLP_processing-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/data_NLP_processing-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/DataProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/DataProcessing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/SpacySimilarityTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Testing/SpacySimilarityTesting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/SpacyTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Testing/SpacyTesting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/spacyNerTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Testing/spacyNerTesting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/Testing/DependencyParceTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Testing/DependencyParceTesting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_NLP_processing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/data_NLP_processing.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -231,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572140414888</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="adding more spacy tests">
+      <created>1572209055621</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572209055621</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -265,6 +268,7 @@
     <MESSAGE value="new" />
     <MESSAGE value="ner testing" />
     <MESSAGE value="ner spacy testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="ner spacy testing" />
+    <MESSAGE value="adding more spacy tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding more spacy tests" />
   </component>
 </project>
