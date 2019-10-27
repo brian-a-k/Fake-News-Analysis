@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c3cbd9a-8d88-4322-9bb1-65bae1605303" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Code/Testing/DependencyParceTesting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/Testing/NerVectorTesting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/data_NLP_processing-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/data_NLP_processing-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/DataProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/DataProcessing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/SpacyTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/SpacyTesting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/SpacySimilarityTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Testing/SpacySimilarityTesting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/SpacyTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Testing/SpacyTesting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/spacyNerTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Testing/spacyNerTesting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_NLP_processing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/data_NLP_processing.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,6 +36,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Code/Testing" />
       <recent name="$PROJECT_DIR$/Data/Kaggle" />
       <recent name="$PROJECT_DIR$/Data/FakeNewsChallenge" />
       <recent name="$PROJECT_DIR$/Data/Testing" />
@@ -50,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.SpacyTesting">
+  <component name="RunManager" selected="Python.DependencyParceTesting">
     <configuration name="DataProcessing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FakeNewsChallenge" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -72,7 +77,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="SpacySimilarityTesting" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="DependencyParceTesting" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FakeNewsChallenge" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code/Testing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/Testing/DependencyParceTesting.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="NerVectorizer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FakeNewsChallenge" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -84,7 +110,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/SpacySimilarityTesting.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/Testing/NerVectorTesting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -105,7 +131,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/SpacyTesting.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/Testing/SpacyTesting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -126,7 +152,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/spacyNerTesting.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/Testing/spacyNerTesting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -137,10 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.DependencyParceTesting" />
+        <item itemvalue="Python.NerVectorizer" />
         <item itemvalue="Python.SpacyTesting" />
         <item itemvalue="Python.spacyNerTesting" />
         <item itemvalue="Python.DataProcessing" />
-        <item itemvalue="Python.SpacySimilarityTesting" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572128349558</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ner spacy testing">
+      <created>1572140414888</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1572140414888</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
