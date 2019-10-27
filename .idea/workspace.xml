@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c3cbd9a-8d88-4322-9bb1-65bae1605303" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Code/Testing/EntityRelations.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/Testing/EntityRelations.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Testing/EntityRelations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/Testing/NerVectorTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Testing/NerVectorTesting.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +49,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.EntityRelations">
+  <component name="RunManager" selected="Python.NerVectorizer">
     <configuration name="DependencyParceTesting" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FakeNewsChallenge" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,9 +157,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.NerVectorizer" />
         <item itemvalue="Python.EntityRelations" />
         <item itemvalue="Python.DependencyParceTesting" />
-        <item itemvalue="Python.NerVectorizer" />
         <item itemvalue="Python.SpacyTesting" />
         <item itemvalue="Python.spacyNerTesting" />
       </list>
@@ -238,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572211750079</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="start testing entity relation extraction">
+      <created>1572212185340</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1572212185340</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -273,6 +281,7 @@
     <MESSAGE value="ner testing" />
     <MESSAGE value="ner spacy testing" />
     <MESSAGE value="adding more spacy tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding more spacy tests" />
+    <MESSAGE value="start testing entity relation extraction" />
+    <option name="LAST_COMMIT_MESSAGE" value="start testing entity relation extraction" />
   </component>
 </project>

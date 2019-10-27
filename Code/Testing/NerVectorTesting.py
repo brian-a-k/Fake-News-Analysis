@@ -42,9 +42,25 @@ fake_headlines = [
     'Van Full Of Illegals Shows Up To Vote Clinton At SIX Polling Places, Still Think Voter Fraud Is A Myth?  The Resistance The Last Line of Defense',
     'Lady Gaga’s Twitter Attack On Melania Trump Lands Her In Handcuffs When The Two Meet Face To Face  The Resistance The Last Line of Defense']
 
+nlp = spacy.load('en_core_web_md')
+ner_pipeline = nlp.pipe(fake_headlines, disable=["tagger", "parser"])
+ner_types = ['PERSON', 'NORP', 'FAC', 'ORG', 'GPE', 'PRODUCT']
+
+ner_filter_list = []
+for idx, doc in enumerate(ner_pipeline):
+    ent_doc = filter(lambda w: w.ent_type_ in ner_types, doc)
+    ner_filter_list.append(' '.join([token.text for token in ent_doc]))
+
+
 test_ner = run_ner_parse(fake_headlines)
 
-print(test_ner)
+print('METHOD:\n')
+for i, t in enumerate(test_ner):
+    print(i, ":", t)
+
+print('\nFILTER:')
+for i, t in enumerate(ner_filter_list):
+    print(i, ":", t)
 
 
 
