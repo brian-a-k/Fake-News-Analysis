@@ -22,7 +22,7 @@ def get_fake_data():
     return list(fake_news_content[fake_news_content.type == 'fake']['text'])
 
 
-# Load English tokenizer, tagger, parser, NER and word vectors
+# Load English tokenizer, tagger, parser, NER and token vectors
 nlp = spacy.load("en_core_web_lg")
 
 text = get_fake_data()

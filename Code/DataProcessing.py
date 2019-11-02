@@ -2,7 +2,7 @@ from typing import *
 import pandas as pd
 from collections import defaultdict
 import spacy
-from spacy.lang.en.stop_words import STOP_WORDS
+from string import punctuation
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 
 
@@ -17,7 +17,8 @@ def fill_null_string_columns(data: pd.DataFrame, fill_dict: dict):
 
 # Removes all characters that are NOT: (letters numbers . ? , !)
 def clean_text_column(data: pd.DataFrame, column_name: str) -> pd.DataFrame:
-    data[column_name] = data[column_name].str.replace('[^0-9a-zA-Z’ .!?,]', '', regex=True)
+    # data[column_name] = data[column_name].str.replace('[^0-9a-zA-Z’ .!?,]', '', regex=True)
+    data[column_name] = data[column_name].str.replace('[^0-9a-zA-Z .!?,]', '', regex=True)
     return data
 
 
@@ -66,7 +67,7 @@ def compute_inverse_doc_matrix(corpus: List[str]) -> pd.DataFrame:
 def run_ner_parse(corpus: List[str]) -> List[str]:
     nlp = spacy.load('en_core_web_md')
     ner_pipeline = nlp.pipe(corpus, disable=["tagger", "parser"])
-    ner_types = ['PERSON', 'NORP', 'FAC', 'ORG', 'GPE', 'PRODUCT']  # NER types to filter
+    ner_types = ['PERSON', 'NORP', 'ORG', 'GPE', 'EVENT', 'WORK_OF_ART', 'LAW', 'LANGUAGE']  # NER types to filter
 
     # re-build the text corpus with just found entities within the NER types
     ner_corpus = []
@@ -93,3 +94,25 @@ def run_prop_noun_parse(corpus: List[str]) -> List[str]:
             noun_corpus.append(' '.join(found_pronouns))
     return noun_corpus
 
+
+def run_ner_noun_parse(corpus: List[str]) -> List[str]:
+    nlp = spacy.load('en_core_web_md')
+    ner_pipeline = nlp.pipe(corpus)
+    ner_types = ['PERSON', 'NORP', 'ORG', 'GPE', 'EVENT', 'WORK_OF_ART', 'LAW', 'LANGUAGE']  # NER types to filter
+    noun_types = ['PROPN', 'NOUN']
+
+    # re-build the text corpus with just found entities within the NER types
+    ner_corpus = []
+    for doc in ner_pipeline:
+        # Get all nouns and proper nouns
+        noun_tokens = [token for token in doc if token.pos_ in noun_types]
+
+        # Get entities from nouns
+        entity_tokens = [token for token in noun_tokens if token.ent_type_ in ner_types]
+
+        # Lemmatization of text (shortens it)
+        lemma_tokens = [token.lemma_.strip().lower() for token in entity_tokens if token.is_stop is False
+                        and token.text not in punctuation]
+
+        ner_corpus.append(' '.join(lemma_tokens))
+    return ner_corpus

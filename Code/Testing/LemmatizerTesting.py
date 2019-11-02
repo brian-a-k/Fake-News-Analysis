@@ -1,5 +1,6 @@
 import spacy
-
+import string
+from spacy.lang.en.stop_words import STOP_WORDS
 
 fake_headlines = [
     'The Amish In America Commit Their Vote To Donald Trump Mathematically Guaranteeing Him A Presidential Victory  ABC News',
@@ -22,38 +23,31 @@ fake_headlines = [
     'Van Full Of Illegals Shows Up To Vote Clinton At SIX Polling Places, Still Think Voter Fraud Is A Myth?  The Resistance The Last Line of Defense',
     'Lady Gaga’s Twitter Attack On Melania Trump Lands Her In Handcuffs When The Two Meet Face To Face  The Resistance The Last Line of Defense']
 
+punctuations = string.punctuation
+stopwords = list(STOP_WORDS)
+stopwords.append('Comment')
 
-def extract_proper_noun_relations(doc):
-    # Merge entities and noun chunks into one token
-    spans = list(doc.ents) + list(doc.noun_chunks)
-    spans = spacy.util.filter_spans(spans)
-    with doc.retokenize() as retokenizer:
-        for span in spans:
-            retokenizer.merge(span)
+nlp = spacy.load('en_core_web_md')
+nlp_pipeline = nlp.pipe(fake_headlines)
+for i, doc in enumerate(nlp_pipeline):
+    lemma_1 = [token for token in doc if token.lemma_ != "-PRON-"]
+    lemma_2 = [token for token in lemma_1 if token.text not in stopwords and token.text.capitalize() not in stopwords
+               and token.text not in punctuations]
 
     ner_types = ['PERSON', 'NORP', 'FAC', 'ORG', 'GPE', 'PRODUCT']
-    relations = []
-    for prop_noun in filter(lambda w: w.ent_type_ in ner_types, doc):
-        if prop_noun.dep_ in ("attr", "dobj"):
-            subject = [w for w in prop_noun.head.lefts if w.dep_ == "nsubj"]
-            if subject:
-                subject = subject[0]
-                relations.append((subject, prop_noun))
-        elif prop_noun.dep_ == "pobj" and prop_noun.head.dep_ == "prep":
-            relations.append((prop_noun.head.head, prop_noun))
-    return relations
+    ner_s = [word for word in lemma_2 if word.ent_type_ in ner_types]
+    print(lemma_2)
+    print(list(doc.noun_chunks))
+    print(ner_s)
+    print('')
 
-
-def main(model="en_core_web_md"):
-    nlp = spacy.load(model)
-    ent_relation_pipeline = nlp.pipe(fake_headlines)
-
-    for i, doc in enumerate(ent_relation_pipeline):
-        relations = extract_proper_noun_relations(doc)
-        for r1, r2 in relations:
-            print('ID:', i, 'TEXT PHRASE:', r1.text, 'ENT_TYPE:', r2.ent_type_, 'ENT_TEXT:', r2.text)
-
-
-if __name__ == '__main__':
-    # todo modify this for other NER relations!!
-    main()
+'''
+# Parser for reviews
+parser = English()
+def spacy_tokenizer(sentence):
+    mytokens = parser(sentence)
+    mytokens = [ token.lemma_.lower().strip() if token.lemma_ != "-PRON-" else token.lower_ for token in mytokens ]
+    mytokens = [ token for token in mytokens if token not in stopwords and token not in punctuations ]
+    mytokens = " ".join([i for i in mytokens])
+    return mytokens
+'''
