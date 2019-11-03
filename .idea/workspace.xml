@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9c3cbd9a-8d88-4322-9bb1-65bae1605303" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Project_Presentation_Part2-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Project_Presentation_Part2-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/TopicModeling-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/TopicModeling-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_Presentation_Part2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Presentation_Part2.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TopicModeling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/TopicModeling.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -276,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572817145643</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="topic modeling cluster viz">
+      <created>1572820112724</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1572820112724</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -314,6 +319,7 @@
     <MESSAGE value="start testing entity relation extraction" />
     <MESSAGE value="testing topic modeling" />
     <MESSAGE value="finalized data processing" />
-    <option name="LAST_COMMIT_MESSAGE" value="finalized data processing" />
+    <MESSAGE value="topic modeling cluster viz" />
+    <option name="LAST_COMMIT_MESSAGE" value="topic modeling cluster viz" />
   </component>
 </project>
