@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c3cbd9a-8d88-4322-9bb1-65bae1605303" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Code/CleanFakeNews.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Project_Presentation_Part2-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Project_Presentation_Part2-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/TopicModeling-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/TopicModeling-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/data_NLP_processing-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/data_NLP_processing-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Testing/SpacyTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Testing/SpacyTesting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project_Presentation_Part2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Presentation_Part2.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TopicModeling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/TopicModeling.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_NLP_processing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/data_NLP_processing.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -273,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572733856709</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="finalized data processing">
+      <created>1572817145643</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1572817145643</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -310,6 +313,7 @@
     <MESSAGE value="adding more spacy tests" />
     <MESSAGE value="start testing entity relation extraction" />
     <MESSAGE value="testing topic modeling" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing topic modeling" />
+    <MESSAGE value="finalized data processing" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalized data processing" />
   </component>
 </project>
