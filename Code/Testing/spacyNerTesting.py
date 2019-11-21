@@ -10,7 +10,7 @@ def clean_text_column(data: pd.DataFrame, column_name: str) -> pd.DataFrame:
 
 
 def get_fake_data():
-    fake_news = pd.read_csv('/Users/briankalinowski/Desktop/Data/Kaggle/fake_news.csv')
+    fake_news = pd.read_csv('/Users/briankalinowski/Desktop/Data/Kaggle/real_news.csv')
     fake_news.drop(columns=['uuid', 'ord_in_thread', 'published'], inplace=True)
     fake_news = fake_news.dropna(subset=['text'])
     fake_news_content = fake_news[['title', 'text', 'type']]

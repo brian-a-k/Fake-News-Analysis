@@ -1,16 +1,11 @@
 """
-Main script for cleaning the 'Getting real about fake news' DataSet
+Main script for cleaning the 'all the news' DataSet
 """
 from typing import *
 import pandas as pd
 import numpy as np
 import spacy
 from string import punctuation
-
-
-# Fills null string columns with a default string value
-def fill_null_string_columns(data: pd.DataFrame, fill_dict: dict):
-    return data.fillna(value=fill_dict)
 
 
 # Removes all characters that are NOT: (letters numbers . ? , !) and any duplicate whitespace
@@ -45,45 +40,34 @@ def nlp_tokenize(corpus: np.ndarray) -> np.ndarray:
     return corpus
 
 
-def main(fake_news: pd.DataFrame) -> pd.DataFrame:
-    # Keep just English articles
-    fake_news = fake_news[fake_news.language == 'english']
-
+def main(real_news: pd.DataFrame) -> pd.DataFrame:
     # Keep just the news content columns and drop any null Text columns
-    fake_news_content = fake_news[['title', 'text', 'type']]
-    fake_news_content = fake_news_content.dropna(subset=['text'])
-    fake_news_content = fake_news_content.reset_index(drop=True)
+    real_news_content = real_news[['title', 'text', 'type']]
 
     # Basic text cleaning of the title and text columns
-    fake_news_content = clean_text_column(fake_news_content, 'title')
-    fake_news_content = clean_text_column(fake_news_content, 'text')
-
-    # fill any blank titles
-    title_fill = {'title': 'default_title'}
-    fake_news_content = fill_null_string_columns(fake_news_content, fill_dict=title_fill)
+    real_news_content = clean_text_column(real_news_content, 'title')
+    real_news_content = clean_text_column(real_news_content, 'text')
 
     # Create our NLP tokenized column for title
-    title_array = pd.Series(fake_news_content.title).to_numpy(dtype=object, copy=True)
+    title_array = pd.Series(real_news_content.title).to_numpy(dtype=object, copy=True)
     title_tokens = nlp_tokenize(corpus=title_array)
-    fake_news_content['tokenized_headline'] = title_tokens
+    real_news_content['tokenized_headline'] = title_tokens
 
     # Create our NLP tokenized column for text
-    text_array = pd.Series(fake_news_content.text).to_numpy(dtype=object, copy=True)
+    text_array = pd.Series(real_news_content.text).to_numpy(dtype=object, copy=True)
     text_tokens = nlp_tokenize(corpus=text_array)
-    fake_news_content['tokenized_content'] = text_tokens
+    real_news_content['tokenized_content'] = text_tokens
 
     # Return cleaned, nlp processed DataFrame
-    return fake_news_content
+    return real_news_content
 
 
 if __name__ == '__main__':
-    # EDIT for your local path to the raw data
-    # Make sure this is just the raw .csv file from: https://www.kaggle.com/mrisdal/fake-news
-    raw_data = pd.read_csv('/Users/briankalinowski/Desktop/Data/Kaggle/real_news.csv')
+    raw_data = pd.read_csv('/Users/briankalinowski/Desktop/Data/General_News/real_news.csv')
 
     # Processing
     nlp_processed = main(raw_data)
 
     # EDIT for your local save file path
-    save_path = '/Users/briankalinowski/Desktop/Data/fake_news_nlp_content.csv'
+    save_path = '/Users/briankalinowski/Desktop/Data/real_news_nlp_content.csv'
     nlp_processed.to_csv(path_or_buf=save_path, header=True, index=None)

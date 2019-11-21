@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c3cbd9a-8d88-4322-9bb1-65bae1605303" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/FakeNewsChallenge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FakeNewsChallenge.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/CleanAllNews.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/Testing/SpacyVectorSimilarityTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Project_Presentation_Part2-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Project_Presentation_Part2-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/TopicModeling-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/TopicModeling-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/SpacyTesting-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/SpacyTesting-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/CleanFakeNews.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/CleanFakeNews.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/DataProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/DataProcessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/Testing/SpacySimilarityTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Testing/SpacySimilarityTesting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/Testing/spacyNerTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Testing/spacyNerTesting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_EDA.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Data_EDA.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project_Presentation_Part2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Presentation_Part2.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TopicModeling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/TopicModeling.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpacyTesting.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SpacyTesting.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_NLP_processing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/data_NLP_processing.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,15 +37,15 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../anaconda3/bin/conda" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Code" />
       <recent name="$PROJECT_DIR$/Code/Testing" />
       <recent name="$PROJECT_DIR$/Data/Kaggle" />
       <recent name="$PROJECT_DIR$/Data/FakeNewsChallenge" />
       <recent name="$PROJECT_DIR$/Data/Testing" />
-      <recent name="$PROJECT_DIR$/Data/Training" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -54,7 +60,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.EntityRelations">
+  <component name="RunManager" selected="Python.CleanAllNews">
+    <configuration name="CleanAllNews" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FakeNewsChallenge" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/CleanAllNews.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="CleanFakeNews" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FakeNewsChallenge" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,7 +124,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="LemmatizerTesting" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="SpacySimilarityTesting" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FakeNewsChallenge" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -109,7 +136,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/Testing/LemmatizerTesting.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/Testing/SpacySimilarityTesting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -118,7 +145,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="NerVectorizer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="SpacyVectorSimilarityTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FakeNewsChallenge" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -126,32 +153,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code/Testing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/Testing/NerVectorTesting.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="SpacyTesting" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="FakeNewsChallenge" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/Testing/SpacyTesting.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/Testing/SpacyVectorSimilarityTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.CleanAllNews" />
+        <item itemvalue="Python.SpacyVectorSimilarityTest" />
+        <item itemvalue="Python.SpacySimilarityTesting" />
         <item itemvalue="Python.EntityRelations" />
         <item itemvalue="Python.CleanFakeNews" />
-        <item itemvalue="Python.SpacyTesting" />
-        <item itemvalue="Python.LemmatizerTesting" />
-        <item itemvalue="Python.NerVectorizer" />
       </list>
     </recent_temporary>
   </component>
@@ -300,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572831895769</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="cluster viz for presentation">
+      <created>1572999450467</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1572999450467</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -340,6 +353,7 @@
     <MESSAGE value="finalized data processing" />
     <MESSAGE value="topic modeling cluster viz" />
     <MESSAGE value="messing with cluster viz" />
-    <option name="LAST_COMMIT_MESSAGE" value="messing with cluster viz" />
+    <MESSAGE value="cluster viz for presentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="cluster viz for presentation" />
   </component>
 </project>
