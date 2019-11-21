@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c3cbd9a-8d88-4322-9bb1-65bae1605303" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Code/CleanAllNews.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Code/Testing/SpacyVectorSimilarityTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Article_Classification.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Project_Presentation_Part2-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Project_Presentation_Part2-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/SpacyTesting-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/SpacyTesting-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/CleanFakeNews.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/CleanFakeNews.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/DataProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/DataProcessing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Testing/SpacySimilarityTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Testing/SpacySimilarityTesting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Testing/spacyNerTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Testing/spacyNerTesting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_EDA.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Data_EDA.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_Presentation_Part2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Presentation_Part2.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpacyTesting.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SpacyTesting.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_NLP_processing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/data_NLP_processing.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,11 +30,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Code" />
       <recent name="$PROJECT_DIR$/Code/Testing" />
       <recent name="$PROJECT_DIR$/Data/Kaggle" />
       <recent name="$PROJECT_DIR$/Data/FakeNewsChallenge" />
-      <recent name="$PROJECT_DIR$/Data/Testing" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -313,7 +302,21 @@
       <option name="project" value="LOCAL" />
       <updated>1572999450467</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="merging fake with real news tokens">
+      <created>1574299034396</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1574299034396</updated>
+    </task>
+    <task id="LOCAL-00020" summary="merging fake with real news tokens">
+      <created>1574299065733</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1574299065733</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -354,6 +357,7 @@
     <MESSAGE value="topic modeling cluster viz" />
     <MESSAGE value="messing with cluster viz" />
     <MESSAGE value="cluster viz for presentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="cluster viz for presentation" />
+    <MESSAGE value="merging fake with real news tokens" />
+    <option name="LAST_COMMIT_MESSAGE" value="merging fake with real news tokens" />
   </component>
 </project>
