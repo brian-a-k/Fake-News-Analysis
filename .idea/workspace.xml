@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c3cbd9a-8d88-4322-9bb1-65bae1605303" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Code/TrainTextCategorizer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/TestTextCategorizer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Spacy_Text_Categorizer -checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Spacy_Text_Categorizer -checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Testing/SpacyTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Testing/SpacyTesting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spacy_Text_Categorizer .ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Spacy_Text_Categorizer .ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -337,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574556923167</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Spacy Text Categorizer training">
+      <created>1574636529485</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1574636529485</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -382,6 +386,7 @@
     <MESSAGE value="merging fake with real news tokens" />
     <MESSAGE value="adding article classification tests" />
     <MESSAGE value="Spacy Text Categorizer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spacy Text Categorizer" />
+    <MESSAGE value="Spacy Text Categorizer training" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spacy Text Categorizer training" />
   </component>
 </project>
