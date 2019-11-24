@@ -1,0 +1,22 @@
+Params: 50/50 split, iterations = 10
+Using 13113 examples (10490 training, 2623 evaluation)
+
+Training the model...
+LOSS 	  P  	  R  	  F  	  A
+210.229	0.954	0.952	0.953	0.953
+58.054	0.959	0.958	0.958	0.958
+35.918	0.962	0.959	0.960	0.96
+28.380	0.964	0.963	0.964	0.964
+27.830	0.963	0.962	0.963	0.963
+
+
+
+Params: 50/50 split, iterations = 4
+Using 13113 examples (10490 training, 2623 evaluation)
+
+Training the model...
+LOSS 	  P  	  R  	  F  	  A
+212.729	0.968	0.966	0.967	0.967
+53.264	0.971	0.974	0.972	0.972
+23.807	0.974	0.974	0.974	0.974
+15.047	0.976	0.976	0.976	0.976
