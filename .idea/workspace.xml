@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c3cbd9a-8d88-4322-9bb1-65bae1605303" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Article_Classification.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Spacy_Text_Categorizer -checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spacy_Text_Categorizer .ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/DataProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/DataProcessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/Testing/LemmatizerTesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Testing/LemmatizerTesting.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,10 +25,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SM3jRgxyuyCFTq8kQrlvcrOyz3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../anaconda3/bin/conda" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CIS700_ML/assignment_1/FraudDataUtils.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -49,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.CleanAllNews">
+  <component name="RunManager" selected="Python.LemmatizerTesting">
     <configuration name="CleanAllNews" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FakeNewsChallenge" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -71,27 +77,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="CleanFakeNews" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="FakeNewsChallenge" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/CleanFakeNews.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="EntityRelations" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FakeNewsChallenge" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -105,6 +90,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/Testing/EntityRelations.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LemmatizerTesting" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FakeNewsChallenge" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code/Testing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/Testing/LemmatizerTesting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -157,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.LemmatizerTesting" />
         <item itemvalue="Python.CleanAllNews" />
         <item itemvalue="Python.SpacyVectorSimilarityTest" />
         <item itemvalue="Python.SpacySimilarityTesting" />
         <item itemvalue="Python.EntityRelations" />
-        <item itemvalue="Python.CleanFakeNews" />
       </list>
     </recent_temporary>
   </component>
@@ -316,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574299065733</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="adding article classification tests">
+      <created>1574374565254</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1574374565254</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -343,6 +356,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
@@ -358,6 +372,7 @@
     <MESSAGE value="messing with cluster viz" />
     <MESSAGE value="cluster viz for presentation" />
     <MESSAGE value="merging fake with real news tokens" />
-    <option name="LAST_COMMIT_MESSAGE" value="merging fake with real news tokens" />
+    <MESSAGE value="adding article classification tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding article classification tests" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 from typing import *
 import pandas as pd
+import numpy as np
 from collections import defaultdict
 import spacy
 from string import punctuation
@@ -116,3 +117,14 @@ def run_ner_noun_parse(corpus: List[str]) -> List[str]:
 
         ner_corpus.append(' '.join(lemma_tokens))
     return ner_corpus
+
+
+def simple_nlp_tokenize(corpus):
+    nlp = spacy.load('en_core_web_lg')
+    pipeline = nlp.pipe(corpus)
+    for idx, doc in enumerate(pipeline):
+        lemma_tokens = [token.lemma_.strip().lower() for token in doc if token.is_stop is False
+                        and token.text not in punctuation and token.lemma_ != '-PRON-']
+
+        corpus[idx] = ' '.join(lemma_tokens)
+    return corpus

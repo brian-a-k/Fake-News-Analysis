@@ -1,6 +1,8 @@
+from string import punctuation
+
+import numpy as np
 import spacy
-import string
-from spacy.lang.en.stop_words import STOP_WORDS
+
 
 fake_headlines = [
     'The Amish In America Commit Their Vote To Donald Trump Mathematically Guaranteeing Him A Presidential Victory  ABC News',
@@ -23,31 +25,19 @@ fake_headlines = [
     'Van Full Of Illegals Shows Up To Vote Clinton At SIX Polling Places, Still Think Voter Fraud Is A Myth?  The Resistance The Last Line of Defense',
     'Lady Gaga’s Twitter Attack On Melania Trump Lands Her In Handcuffs When The Two Meet Face To Face  The Resistance The Last Line of Defense']
 
-punctuations = string.punctuation
-stopwords = list(STOP_WORDS)
-stopwords.append('Comment')
 
-nlp = spacy.load('en_core_web_md')
-nlp_pipeline = nlp.pipe(fake_headlines)
-for i, doc in enumerate(nlp_pipeline):
-    lemma_1 = [token for token in doc if token.lemma_ != "-PRON-"]
-    lemma_2 = [token for token in lemma_1 if token.text not in stopwords and token.text.capitalize() not in stopwords
-               and token.text not in punctuations]
+def simple_nlp_tokenize(corpus):
+    nlp = spacy.load('en_core_web_lg')
+    pipeline = nlp.pipe(corpus)
+    for idx, doc in enumerate(pipeline):
+        lemma_tokens = [token.lemma_.strip().lower() for token in doc if token.is_stop is False
+                        and token.text not in punctuation and token.lemma_ != '-PRON-']
+        corpus[idx] = ' '.join(lemma_tokens)
+    return corpus
 
-    ner_types = ['PERSON', 'NORP', 'FAC', 'ORG', 'GPE', 'PRODUCT']
-    ner_s = [word for word in lemma_2 if word.ent_type_ in ner_types]
-    print(lemma_2)
-    print(list(doc.noun_chunks))
-    print(ner_s)
-    print('')
 
-'''
-# Parser for reviews
-parser = English()
-def spacy_tokenizer(sentence):
-    mytokens = parser(sentence)
-    mytokens = [ token.lemma_.lower().strip() if token.lemma_ != "-PRON-" else token.lower_ for token in mytokens ]
-    mytokens = [ token for token in mytokens if token not in stopwords and token not in punctuations ]
-    mytokens = " ".join([i for i in mytokens])
-    return mytokens
-'''
+fake_headlines = simple_nlp_tokenize(fake_headlines)
+
+print(fake_headlines)
+
+
