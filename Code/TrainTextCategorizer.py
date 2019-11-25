@@ -7,13 +7,13 @@ from sklearn.model_selection import train_test_split
 
 
 def split_training_testing_data(data: pd.DataFrame, target: str, size: float) -> Tuple[pd.DataFrame, pd.DataFrame]:
-    # Split data with sklearn train/test
+    # Split raw_data with sklearn train/test
     x_train, x_test, y_train, y_test = train_test_split(data.drop(columns=[target]),
                                                         data[target],
                                                         test_size=size,
                                                         random_state=21)
 
-    # concat x, y data-sets (for Spacy)
+    # concat x, y raw_data-sets (for Spacy)
     data_training = pd.concat([x_train, y_train], 1).reset_index(drop=True)
     data_testing = pd.concat([x_test, y_test], 1).reset_index(drop=True)
     return data_training, data_testing
@@ -35,7 +35,7 @@ def format_training_data(df: pd.DataFrame, feature: str, target: str, limit: int
     # Text Cat. news labels
     text_cat_labels = [{"REAL": bool(y), "FAKE": not bool(y)} for y in labels]
 
-    # Segment out data for cross validation while training
+    # Segment out raw_data for cross validation while training
     split = int(len(train_data_list) * split)
     train_tuple = (texts[:split], text_cat_labels[:split])
     eval_tuple = (texts[split:], text_cat_labels[split:])
@@ -55,16 +55,16 @@ def evaluate_textcat_training(tokenizer, textcat, texts, cats):
             if label not in gold:
                 continue
             if score >= 0.5 and gold[label] >= 0.5:
-                tp += 1.
+                tp += 1.0
             elif score >= 0.5 and gold[label] < 0.5:
-                fp += 1.
+                fp += 1.0
             elif score < 0.5 and gold[label] < 0.5:
-                tn += 1
+                tn += 1.0
             elif score < 0.5 and gold[label] >= 0.5:
-                fn += 1
+                fn += 1.0
     precision = tp / (tp + fp)
     recall = tp / (tp + fn)
-    f_score = 2 * (precision * recall) / (precision + recall)
+    f_score = 2.0 * (precision * recall) / (precision + recall)
     accuracy = ((tp + tn) / (tp + tn + fp + fn))
     return {'textcat_p': precision, 'textcat_r': recall, 'textcat_f': f_score, 'textcat_a': accuracy}
 
@@ -87,10 +87,11 @@ def main(train_data: list, eval_texts: Tuple, eval_cat: Tuple, n_iterations: int
         print('ERROR no save dir for model')
         return
 
-    # main training loop
     nlp_training = get_base_model()
+    # Only train the text categorizer
     other_pipes = [pipe for pipe in nlp_training.pipe_names if pipe != 'textcat']
 
+    # main training loop
     with nlp_training.disable_pipes(*other_pipes):
         optimizer = nlp_training.begin_training()
         print('Training the model...')
@@ -131,21 +132,21 @@ if __name__ == '__main__':
     save_model_path = '/Users/briankalinowski/Desktop/Data/spacy/test_model'
 
     # Tokenized DataFrame
-    data = pd.read_csv(load_path)
+    raw_data = pd.read_csv(load_path)
 
     # Train/Test split
-    training_raw, testing_raw = split_training_testing_data(data, 'valid_score', 0.5)
+    training_raw, testing_raw = split_training_testing_data(raw_data, 'valid_score', size=0.5)
 
-    # Length (rows) of the data
+    # Length (rows) of the raw_data
     n_texts = training_raw.shape[0]
 
-    # Format the training data
+    # Format the training raw_data
     (train_texts, train_cats), (dev_texts, dev_cats) = format_training_data(training_raw, 'tokenized_content',
                                                                             'valid_score', limit=n_texts)
 
     # Combine training text and labels
     train_final = list(zip(train_texts, [{'cats': cats} for cats in train_cats]))
-    print('Loading news data...')
+    print('Loading news raw_data...')
     print('Using {} examples ({} for training, {} for cross evaluation)\n'.format(n_texts, len(train_texts),
                                                                                   len(dev_texts)))
 

@@ -16,6 +16,6 @@ def assign_valid_class(row):
     elif weighted_real < weighted_fake:
         valid_class = 0
     else:
-        # default to a real article if both weighted scores are equal (a lot of bias/vague articles in the data-set)
+        # default to a real article if both weighted scores are equal (a lot of bias/vague articles in the raw_data-set)
         valid_class = 1
     return valid_class

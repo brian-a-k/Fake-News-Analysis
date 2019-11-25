@@ -18,7 +18,7 @@ def fill_null_string_columns(data: pd.DataFrame, fill_dict: dict):
 
 # Removes all characters that are NOT: (letters numbers . ? , !)
 def clean_text_column(data: pd.DataFrame, column_name: str) -> pd.DataFrame:
-    # data[column_name] = data[column_name].str.replace('[^0-9a-zA-Z’ .!?,]', '', regex=True)
+    # raw_data[column_name] = raw_data[column_name].str.replace('[^0-9a-zA-Z’ .!?,]', '', regex=True)
     data[column_name] = data[column_name].str.replace('[^0-9a-zA-Z .!?,]', '', regex=True).str.split().str.join(' ')
     return data
 

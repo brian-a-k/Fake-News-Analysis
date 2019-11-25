@@ -77,7 +77,7 @@ def main(fake_news: pd.DataFrame) -> pd.DataFrame:
 
 
 if __name__ == '__main__':
-    # EDIT for your local path to the raw data
+    # EDIT for your local path to the raw raw_data
     # Make sure this is just the raw .csv file from: https://www.kaggle.com/mrisdal/fake-news
     raw_data = pd.read_csv('/Users/briankalinowski/Desktop/Data/Kaggle/real_news.csv')
 
