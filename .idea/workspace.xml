@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c3cbd9a-8d88-4322-9bb1-65bae1605303" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Code/PresentationUtils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/LDA_Topip_Modeling_and_Clustering-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LDA_Topip_Modeling_and_Clustering.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Final_Presentation-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Final_Presentation-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/news_data_merge-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/news_data_merge-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/DataProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/DataProcessing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final_Presentation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Final_Presentation.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news_data_merge.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/news_data_merge.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/TopicModeling-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/TopicModeling-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_Presentation_Part2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Presentation_Part2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TopicModeling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/TopicModeling.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -359,7 +358,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574715829146</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="code cleanup part 1">
+      <created>1575143346272</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1575143346272</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -407,6 +413,7 @@
     <MESSAGE value="Spacy Text Categorizer training" />
     <MESSAGE value="Spacy Text Categorizer testing" />
     <MESSAGE value="adding final presentation notebook" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding final presentation notebook" />
+    <MESSAGE value="code cleanup part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="code cleanup part 1" />
   </component>
 </project>
