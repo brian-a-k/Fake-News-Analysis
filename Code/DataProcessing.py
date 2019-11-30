@@ -128,3 +128,27 @@ def simple_nlp_tokenize(corpus):
 
         corpus[idx] = ' '.join(lemma_tokens)
     return corpus
+
+
+def get_real_news_sample(news_df: pd.DataFrame, partition_col: str, word_len_col: str, thresh: int = 3) -> pd.DataFrame:
+    # list of unique publications or articles types
+    partition_values = list(news_df[partition_col].unique())
+
+    # avg word length is the lower bound word limit
+    lower_bound_len = int(round(news_df[word_len_col].mean()))
+
+    # avg word length + (threshold * std) is the upper bound word limit
+    upper_bound_len = int(round(lower_bound_len + (news_df[word_len_col].std() * thresh)))
+
+    # Sampled DataFrame
+    news_subset_df = pd.DataFrame()
+
+    for val in partition_values:
+        # get 1000 articles within the word length range
+        partition_df = news_df[(news_df[partition_col] == val) &
+                               (news_df[word_len_col] >= lower_bound_len) &
+                               (news_df[word_len_col] <= upper_bound_len)].nsmallest(1000, word_len_col)
+
+        # append to one DataFrame
+        news_subset_df = news_subset_df.append(partition_df, ignore_index=True)
+    return news_subset_df
