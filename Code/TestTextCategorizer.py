@@ -4,6 +4,7 @@ import spacy
 
 class FakeNewsPredictions:
     def __init__(self, raw_test_data: pd.DataFrame, nlp_model_path: str):
+        # Load Trained TextCat model saved to the path in TrainTextCategorizer.py
         self.trained_model = spacy.load(nlp_model_path, disable=['parser', 'tagger', 'ner'])
         self.test_data = raw_test_data
 
@@ -48,13 +49,14 @@ def real_weighted(row):
 def assign_valid_class(row):
     # sum of the REAL and Fake scores (they are not probabilities)
     score_sum = (row.REAL + row.FAKE)
+
     # divide each score by their sum for weighted probabilities
     weighted_real = row.REAL / score_sum
     weighted_fake = row.FAKE / score_sum
 
     if (weighted_real > weighted_fake) and (row.REAL >= 0.5) and (row.FAKE < 0.5):
         valid_class = 1
-    elif weighted_real < weighted_fake and (row.FAKE >= 0.5) and (row.REAL < 0.5):
+    elif (weighted_real < weighted_fake) and (row.FAKE >= 0.5) and (row.REAL < 0.5):
         valid_class = 0
     else:
         # just default to the raw scores

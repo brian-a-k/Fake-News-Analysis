@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c3cbd9a-8d88-4322-9bb1-65bae1605303" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/LDA_Topip_Modeling_and_Clustering-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LDA_Topip_Modeling_and_Clustering.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/briankalinowski.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Article_Classification_LSTM-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/FN_Sentiment_Analysis-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Article_Classification_LSTM.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/LemmaParseAllNews.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/SentimentAnalysisUtils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FN_Sentiment_Analysis.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/TopicModeling-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/TopicModeling-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_Presentation_Part2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Presentation_Part2.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TopicModeling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/TopicModeling.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/CleanAllNews.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/NERNounParseRealNews.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/CleanFakeNews.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/NERNounParseFakeNews.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/TestTextCategorizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/TestTextCategorizer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +74,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/CleanAllNews.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/NERNounParseRealNews.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -365,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575143346272</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="added LDA clustering for merged news">
+      <created>1575149685186</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1575149685186</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -414,6 +426,7 @@
     <MESSAGE value="Spacy Text Categorizer testing" />
     <MESSAGE value="adding final presentation notebook" />
     <MESSAGE value="code cleanup part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="code cleanup part 1" />
+    <MESSAGE value="added LDA clustering for merged news" />
+    <option name="LAST_COMMIT_MESSAGE" value="added LDA clustering for merged news" />
   </component>
 </project>
