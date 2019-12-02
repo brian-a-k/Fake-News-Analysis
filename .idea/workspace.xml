@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c3cbd9a-8d88-4322-9bb1-65bae1605303" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/briankalinowski.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Article_Classification_LSTM-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/FN_Sentiment_Analysis-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article_Classification_LSTM.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Code/LemmaParseAllNews.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Code/SentimentAnalysisUtils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FN_Sentiment_Analysis.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/CleanAllNews.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/NERNounParseRealNews.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/CleanFakeNews.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/NERNounParseFakeNews.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/TestTextCategorizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/TestTextCategorizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Final_Presentation-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Final_Presentation-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final_Presentation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Final_Presentation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes" beforeDir="false" afterPath="$PROJECT_DIR$/notes" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -377,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575149685186</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="sentiment analysis and classification">
+      <created>1575239963931</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1575239963931</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -427,6 +427,7 @@
     <MESSAGE value="adding final presentation notebook" />
     <MESSAGE value="code cleanup part 1" />
     <MESSAGE value="added LDA clustering for merged news" />
-    <option name="LAST_COMMIT_MESSAGE" value="added LDA clustering for merged news" />
+    <MESSAGE value="sentiment analysis and classification" />
+    <option name="LAST_COMMIT_MESSAGE" value="sentiment analysis and classification" />
   </component>
 </project>
