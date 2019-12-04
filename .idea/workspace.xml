@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c3cbd9a-8d88-4322-9bb1-65bae1605303" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/AllNews_Topic_Modeling_and_Clustering-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/FakeNews_Topic_Modeling_and_Clustering-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AllNews_Topic_Modeling_and_Clustering.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FakeNews_Topic_Modeling_and_Clustering.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/LDA_Topip_Modeling_and_Clustering-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Project_Presentation_Part2-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/data_NLP_processing-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/data_NLP_processing-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article_Classification.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Article_Classification.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LDA_Topip_Modeling_and_Clustering.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_Presentation_Part2.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_NLP_processing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/data_NLP_processing.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/TrainTextCategorizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/TrainTextCategorizer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -413,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575424456033</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="cleaning up all code">
+      <created>1575493661925</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1575493661925</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -465,6 +462,7 @@
     <MESSAGE value="added LDA clustering for merged news" />
     <MESSAGE value="sentiment analysis and classification" />
     <MESSAGE value="cleaning up presentation notebook" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaning up presentation notebook" />
+    <MESSAGE value="cleaning up all code" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaning up all code" />
   </component>
 </project>

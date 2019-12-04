@@ -43,7 +43,7 @@ def format_training_data(df: pd.DataFrame, feature: str, target: str, limit: int
 
 
 # Training Cross validation method
-def evaluate_textcat_training(tokenizer, textcat, texts, cats):
+def evaluate_model_training(tokenizer, textcat, texts, cats):
     docs = (tokenizer(text) for text in texts)
     tp = 1e-8  # True positives
     fp = 1e-8  # False positives
@@ -107,7 +107,7 @@ def main(train_data: list, eval_texts: Tuple, eval_cat: Tuple, n_iterations: int
             if verbose:
                 textcat = nlp_training.get_pipe('textcat')
                 with textcat.model.use_params(optimizer.averages):
-                    scores = evaluate_textcat_training(nlp_training.tokenizer, textcat, eval_texts, eval_cat)
+                    scores = evaluate_model_training(nlp_training.tokenizer, textcat, eval_texts, eval_cat)
                     # output the CV scores for each iteration
                     print('Training Iteration: {}'.format(i + 1))
                     print('{:^5}\t{:^5}\t{:^5}\t{:^5}\t{:^5}'.format('LOSS', 'P', 'R', 'F', 'A'))
