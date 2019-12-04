@@ -1,6 +1,7 @@
 import nltk
 import numpy as np
 import pandas as pd
+from typing import *
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, confusion_matrix
@@ -30,7 +31,7 @@ def get_sentiment_vader_scores(data: pd.DataFrame, text_col: str) -> pd.DataFram
 
 
 def run_random_forest_grid_search(x_train: pd.DataFrame, y_train: pd.Series, cv_params: dict,
-                                  x_test: pd.DataFrame) -> np.array:
+                                  x_test: pd.DataFrame) -> Tuple[Any, Any]:
     # Random Forest Classifier
     random_forest_model = RandomForestClassifier(random_state=21)
 
@@ -42,8 +43,8 @@ def run_random_forest_grid_search(x_train: pd.DataFrame, y_train: pd.Series, cv_
     print('Best Training Parameters:', rf_grid_search.best_params_)
     print('Best Training Score:', rf_grid_search.best_score_)
 
-    # Return best Random Forest predictions
-    return rf_grid_search.predict(x_test)
+    # Return best Random Forest predictions, and probabilities
+    return rf_grid_search.predict(x_test), rf_grid_search.predict_proba(x_test)
 
 
 def get_count_vectorizer_matrix(data: pd.DataFrame, text_col: str) -> np.array:
