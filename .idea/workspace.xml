@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c3cbd9a-8d88-4322-9bb1-65bae1605303" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Final_Presentation_v2-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Final_Presentation_v2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/AllNews_Topic_Modeling_and_Clustering-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.ipynb_checkpoints/FakeNews_Topic_Modeling_and_Clustering-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AllNews_Topic_Modeling_and_Clustering.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FakeNews_Topic_Modeling_and_Clustering.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Article_Classification_LSTM-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Article_Classification_LSTM-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/FN_Sentiment_Analysis-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/FN_Sentiment_Analysis-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Final_Presentation-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Final_Presentation-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Article_Classification_LSTM.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Article_Classification_LSTM.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/SentimentAnalysisUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/SentimentAnalysisUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FN_Sentiment_Analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/FN_Sentiment_Analysis.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final_Presentation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Final_Presentation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/LDA_Topip_Modeling_and_Clustering-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Project_Presentation_Part2-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/data_NLP_processing-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/data_NLP_processing-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Article_Classification.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Article_Classification.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LDA_Topip_Modeling_and_Clustering.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_Presentation_Part2.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_NLP_processing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/data_NLP_processing.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -390,7 +392,28 @@
       <option name="project" value="LOCAL" />
       <updated>1575246091137</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="cleaning up presentation notebook">
+      <created>1575424292744</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1575424292744</updated>
+    </task>
+    <task id="LOCAL-00031" summary="cleaning up presentation notebook">
+      <created>1575424317997</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1575424317997</updated>
+    </task>
+    <task id="LOCAL-00032" summary="cleaning up presentation notebook">
+      <created>1575424456032</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1575424456033</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -441,6 +464,7 @@
     <MESSAGE value="code cleanup part 1" />
     <MESSAGE value="added LDA clustering for merged news" />
     <MESSAGE value="sentiment analysis and classification" />
-    <option name="LAST_COMMIT_MESSAGE" value="sentiment analysis and classification" />
+    <MESSAGE value="cleaning up presentation notebook" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaning up presentation notebook" />
   </component>
 </project>
